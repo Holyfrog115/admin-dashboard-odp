@@ -1,0 +1,91 @@
+/* Start of css reset */
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* End of css reset */
+
+
+:root {
+    --main-clr: #1a92d5;
+    --secondary-clr: #ecb735;
+    --main-bg-clr: #e1e8f0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: var(--main-clr);
+    color: white;
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.header {
+    grid-template-columns: 2 / -1;
+    grid-template-rows: 1 / 2;
+}
+
+.main {
+    grid-template-columns: 2 / -1;
+    grid-template-rows: 2 / 3;
+    background-color: var(--main-bg-clr);
+}
