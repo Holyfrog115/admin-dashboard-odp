@@ -144,16 +144,19 @@ h1, h2, h3, h4, h5, h6 {
   gap: 30px;
 }
 
-.card {
-  height: 200px;
-  width: 350px;
+.card, .announcment-card, .trending-card {
   background-color: white;
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
   border-radius: 5px;
-  border-left: 7px solid var(--secondary-clr);
   box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+
+.card {
+  height: 215px;
+  width: 350px;
+  border-left: 7px solid var(--secondary-clr);
 }
 
 .card h2 {
@@ -162,4 +165,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .card p {
   color: var(--subtext-clr);
+}
+
+.announcments, .trending {
+  margin-right: 1.5rem;
+}
+
+.announcment-card, .trending-card {
+  height: 85%;
+  border-radius: 10px;
+}
+
+.announcment-card {
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+}
+
+.announcment-card h2 {
+  font-size: 1rem;
+}
+
+.announcment-card p {
+  color: var(--subtext-clr);
+}
+
+.announcment {
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.announcment-card > #first {
+  border-top: none;
 }
