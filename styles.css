@@ -2,7 +2,9 @@
 
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -26,18 +28,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -45,14 +60,21 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -86,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1.5rem;
 }
 
-.sidebar > div {
+.sidebar>div {
   margin-left: 2rem;
 }
 
@@ -110,7 +132,8 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.top-section, .bottom-section {
+.top-section,
+.bottom-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +167,9 @@ h1, h2, h3, h4, h5, h6 {
   gap: 30px;
 }
 
-.card, .announcment-card, .trending-card {
+.card,
+.announcment-card,
+.trending-card {
   background-color: white;
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
@@ -167,11 +192,13 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--subtext-clr);
 }
 
-.announcments, .trending {
+.announcments,
+.trending {
   margin-right: 1.5rem;
 }
 
-.announcment-card, .trending-card {
+.announcment-card,
+.trending-card {
   height: 85%;
   border-radius: 10px;
 }
@@ -191,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .announcment {
   border-top: 1px solid rgba(0, 0, 0, 0.35);
-  
+
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -204,4 +231,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .announcment-card > #first {
   border-top: none;
+}
+
+.trending-card {
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.user-project {
+  color: var(--subtext-clr);
+}
+
+.circle {
+  height: 45px;
+  width: 45px;
+  background-color: #ecb735;
+  border-radius: 50%;
+}
+
+.trending-profile {
+  display: flex;
+  gap: 25px;
+}
+
+.user-textdata {
+  display: flex;
+  flex-direction: column;
 }
