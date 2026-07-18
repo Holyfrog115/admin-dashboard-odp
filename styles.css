@@ -96,6 +96,8 @@ h6 {
   grid-template-rows: 1fr 5fr;
 }
 
+/* Sidebar */
+
 .sidebar {
   background-color: var(--main-clr);
   color: white;
@@ -125,6 +127,8 @@ h6 {
   font-size: 1.5rem;
 }
 
+/* Header */
+
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
@@ -140,6 +144,8 @@ h6 {
   padding: 0 5vw;
 }
 
+/* Main content */
+
 .main {
   grid-column: 2 / -1;
   grid-row: 2 / 3;
@@ -149,6 +155,8 @@ h6 {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(2, 1fr);
 }
+
+/* Projects */
 
 .projects {
   grid-row: 1 / -1;
@@ -192,6 +200,8 @@ h6 {
   color: var(--subtext-clr);
 }
 
+/* Announcments */
+
 .announcments,
 .trending {
   margin-right: 1.5rem;
@@ -232,6 +242,8 @@ h6 {
 .announcment-card > #first {
   border-top: none;
 }
+
+/* Trending */
 
 .trending-card {
   font-size: 1rem;
