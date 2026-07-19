@@ -218,7 +218,38 @@ input[type="search"] {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.main-icon {
+  height: 20px;
+  fill: black;
+}
+
+.share-rotate {
+  transform: rotate(-90deg);
+}
+
 /* Projects */
+
+.card-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+}
+
+.card > div {
+  position: relative;
+}
+
+.card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .projects {
   grid-row: 1 / -1;
