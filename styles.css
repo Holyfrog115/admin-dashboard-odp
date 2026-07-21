@@ -216,6 +216,10 @@ a {
   gap: 25px;
 }
 
+.profile-mini > img {
+  cursor: pointer;
+}
+
 .top-section,
 .bottom-section {
   display: flex;
