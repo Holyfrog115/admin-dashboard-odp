@@ -169,7 +169,7 @@ body {
 .profile {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 25px;
 }
 
@@ -180,6 +180,19 @@ body {
 
 .big {
   height: 60px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+#greeting-statement {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.big-profile-name {
+  font-size: 1.3rem;
 }
 
 .header-icon {
@@ -212,7 +225,9 @@ body {
   border: none;
   border-radius: 15px;
   width: 100px;
-  height: 35px
+  height: 35px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .buttons button:hover {
