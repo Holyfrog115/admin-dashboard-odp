@@ -117,7 +117,7 @@ body {
   gap: 50px;
   font-size: 1.25rem;
   padding-top: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.15rem;
 }
 
@@ -183,11 +183,11 @@ body {
 }
 
 .profile-name {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #greeting-statement {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.75rem;
 }
 
@@ -255,6 +255,12 @@ input[type="search"] {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.main h1 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
 .main-icon {
   height: 20px;
   fill: black;
@@ -293,12 +299,6 @@ input[type="search"] {
   grid-column: 1 / 2;
 }
 
-.main h1 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  font-weight: normal;
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
@@ -323,7 +323,8 @@ input[type="search"] {
 }
 
 .card h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .card p {
@@ -349,7 +350,8 @@ input[type="search"] {
 }
 
 .announcment-card h2 {
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .announcment-card p {
@@ -403,4 +405,5 @@ input[type="search"] {
   display: flex;
   flex-direction: column;
   text-wrap: nowrap;
+  font-size: 0.95rem;
 }
