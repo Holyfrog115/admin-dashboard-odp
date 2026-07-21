@@ -281,6 +281,10 @@ input[type="search"] {
   fill: black;
 }
 
+.main-icon:hover {
+  cursor: pointer;
+}
+
 .share-rotate {
   transform: rotate(-90deg);
 }
@@ -394,26 +398,21 @@ input[type="search"] {
 
 .trending-card {
   font-size: 1rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  gap: 15px;
 }
 
 .user-project {
   color: var(--subtext-clr);
 }
 
-.circle {
-  height: 45px;
-  width: 45px;
-  background-color: #ecb735;
-  border-radius: 50%;
-}
-
-.trending-profile {
+.trending-profile a {
   display: flex;
   gap: 25px;
+  padding: 0 2rem;
+  padding-top: calc(15px / 2);
+  padding-bottom: calc(15px / 2);
 }
 
 .user-textdata {
@@ -421,4 +420,8 @@ input[type="search"] {
   flex-direction: column;
   text-wrap: nowrap;
   font-size: 0.95rem;
+}
+
+.trending-link:hover {
+  background-color: rgba(0, 0, 0, 0.15);
 }
