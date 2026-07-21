@@ -242,6 +242,11 @@ a {
 
 .buttons button:hover {
   background-color: var(--main-clr-hover);
+  cursor: pointer;
+}
+
+#bell:hover {
+  cursor: pointer;
 }
 
 input[type="search"] {
